@@ -3,32 +3,36 @@ import React from "react";
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <a href="#" className="logo">
+      <Link to="/" className="logo">
         <h1>Carpishop</h1>
-      </a>
+      </Link>
+
+      {/* cambial a por Link, y href por to... para navegar por la app sin tener que recargar la pagina cada vez al cambiar de link */}
+
       <ul className="menu">
+        {/* cambiar to a rutas "/", "nosotros". para al clickear nos lleven a los links correctos */}
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="/">
             Inicio
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="nosotros">
             Nosotros
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="#">
             Productos
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu-link" href="#">
+          <Link className="menu-link" to="#">
             Contacto
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu-link" href="#"></a>
+          <Link className="menu-link" to="#"></Link>
         </li>
       </ul>
     </nav>
