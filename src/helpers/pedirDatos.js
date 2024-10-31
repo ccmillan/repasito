@@ -7,3 +7,22 @@ export const pedirDatos = () => {
         },500)
     })
 }
+
+export const pedirItemPorId = (id) => {
+    return new Promise((resolve, reject) => {
+        
+        const item = data.find((el) => el.id === id)
+        // item busca en la data el elemento que tenga el mismo id que el id dado por pedir datos
+
+
+        if(item) {
+            resolve(item)
+            
+        }
+        else {
+            reject ({
+                error: "No se encontro el producto"
+            })
+        }
+    })
+}

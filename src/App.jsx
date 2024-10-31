@@ -8,7 +8,7 @@ function App() {
     <div>
       <NavBar />
       {/* <ItemListContainer /> */}
-      <ItemDetailContainer />
+      <ItemDetailContainer itemId={2} />
     </div>
   );
 }
