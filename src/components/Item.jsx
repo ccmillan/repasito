@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Item = ({ prod }) => {
   return (
@@ -8,10 +9,10 @@ const Item = ({ prod }) => {
         <h4>{prod.titulo}</h4>
         <p>Precio: $ {prod.precio}</p>
         <p>Categoria: {prod.categoria}</p>
-        <a className="ver-mas" href={`/item/${prod.id}`}>
+        <Link className="ver-mas" to={`/item/${prod.id}`}>
           {/* para cambiar de pag(`/item/${prod.id}`) */}
           Ver mas
-        </a>
+        </Link>
       </div>
     </div>
   );
