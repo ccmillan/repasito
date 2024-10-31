@@ -3,13 +3,13 @@ import { pedirItemPorId } from "../helpers/pedirDatos";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 
-const ItemDetailContainer = ({ itemId }) => {
+const ItemDetailContainer = () => {
   // { itemId } ya no lo vamos a recibir como prop, sino como parametro dinamico
 
   const [item, setItem] = useState(null);
   const id = useParams().id;
+
   // useParams siempre devuelve un string
-  console.log(id);
 
   // hook useParams nos devuelve un objeto con los parametros que hay en una url
 

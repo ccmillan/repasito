@@ -14,6 +14,8 @@ function App() {
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/item/:id" element={<ItemDetailContainer />} />
         {/* queremos caprurar el item(id) dinamico, no con una propiedad [itemId={2}], que capture la opcion que el usuario quiere elegir */}
+        <Route path="/productos" element={<ItemListContainer />} />
+        <Route path="/productos/:categoria" element={<ItemListContainer />} />
 
         <Route path="/nosotros" element={<Nosotros />} />
       </Routes>
