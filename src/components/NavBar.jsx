@@ -7,7 +7,7 @@ const NavBar = () => {
         <h1>Carpishop</h1>
       </Link>
 
-      {/* cambial a por Link, y href por to... para navegar por la app sin tener que recargar la pagina cada vez al cambiar de link */}
+      {/* cambial a por Link, y href por to... para navegar por la app sin tener que recargar la pagina cada vez al cambiar de link   */}
 
       <ul className="menu">
         {/* cambiar to a rutas "/", "nosotros". para al clickear nos lleven a los links correctos */}
