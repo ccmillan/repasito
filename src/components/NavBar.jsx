@@ -47,6 +47,11 @@ const NavBar = () => {
             Buzos
           </Link>
         </li>
+        <li>
+          <Link className="menu-link" to="/productos/contacto">
+            Contacto
+          </Link>
+        </li>
 
         {/* <li> */}
         {/* <Link className="menu-link" to="#">
