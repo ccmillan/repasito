@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { Form } from "react-router-dom";
 
 const Contacto = () => {
-  const [nombre, setNombre] = useState("");
-  const [email, setEmail] = useState("");
+  const [valores, setValores] = useState({
+    nombre: "",
+    email: "",
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("enviado", { nombre, email });
+    console.log("enviado", { valores });
   };
 
   const handleNombre = (e) => {
@@ -17,6 +19,14 @@ const Contacto = () => {
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
+
+  const handleValores = (e) => {
+    setValores({
+      ...valores,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <div className="container">
       <h1 className="main-title">Contacto</h1>
@@ -24,14 +34,16 @@ const Contacto = () => {
         <input
           type="text"
           placeholder="Ingresa tu nombre"
-          value={nombre}
-          onChange={handleNombre}
+          value={valores.nombre}
+          onChange={handleValores}
+          name="nombre"
         />
         <input
           type="text"
           placeholder="Ingresa tu e-mail"
-          value={email}
-          onChange={handleEmail}
+          value={valores.email}
+          onChange={handleValores}
+          name="email"
         />
         <button type="submit" className="enviar">
           Enviar
