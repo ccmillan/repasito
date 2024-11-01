@@ -7,6 +7,9 @@ const Contacto = () => {
     console.log(data);
   };
   //   cuando enviamos con "onSubmit={handleSubmit(enviar)}" recibimos una "data"/un objeto. con la info de "nombre", "email" suministrado por (register)
+
+  //
+  //necesito aprender a validar los dato
   return (
     <div className="container">
       <h1 className="main-title">Contacto</h1>
