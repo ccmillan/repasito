@@ -35,3 +35,5 @@ function App() {
 }
 
 export default App;
+
+// CartContext.Provider vamos a accesar a cualquier cosa proveida por Provider, desde cualquier parte de la app
